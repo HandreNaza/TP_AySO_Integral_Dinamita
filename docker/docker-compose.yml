@@ -2,9 +2,11 @@ version: '3'
 
 services:
     web:
-        image: 
+        image: handresnaza/tp-div_314_grupo_dinamita
+          # Otros miembros del grupo pueden usar su imagen comentando la línea anterior y descomentando una de estas:
+          # image: <miembro1>/tp-div_<xxx>_grupo_<nombre-grupo>
+          # image: <miembro2>/tp-div_<xxx>_grupo_<nombre-grupo>
         ports:
-            - 
+            - "8081:80"
         volumes:
-            - 
-
+            - ./web/file:/usr/share/nginx/html/file
